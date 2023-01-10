@@ -1,8 +1,8 @@
 /*
- * CS2050 - Computer Science II - Fall 2022
+ * CS2050 - Computer Science II - Spring 2023
  * Instructor: Thyago Mota
- * Description: Activity 02 - Dice
+ * Description: Activity 02 - Die
  */
 
-public class Dice {
+public class Die {
 }
