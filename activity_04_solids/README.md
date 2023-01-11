@@ -1,6 +1,6 @@
 # Introduction 
 
-In this activity you will create unit tests for specialized solid classes: Cube, Pyramid, and Cylinder. 
+In this activity you will create unit tests for specialized solid classes: Cube, Pyramid, and Cylinder. You will also generate documentation for the classes that you will implement. 
 
 # Solid
 
@@ -14,7 +14,7 @@ The **Cube** class extends **Solid** and overrides the volume method according t
 
 Implement 2 constructors for the **Cube** class: one that takes the side of the cube (if the informed value is invalid, then it should default to Solid.DEFAULT_MEASURE); and another that sets its side to Solid.DEFAULT_MEASURE automatically. 
 
-Make sure that your implementation passes all of the tests defined in **CubeTest**. 
+Make sure that your implementation passes all of the tests defined in **CubeTest**. When you are done, document your class using JavaDoc's format. 
 
 # Pyramid
 
