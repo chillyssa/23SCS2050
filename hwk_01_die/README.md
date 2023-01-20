@@ -28,7 +28,7 @@ Zip **Die.java** and **DieDriver.java** in a file called **die.zip**. You must u
 
 +1 Die's constructors
 
-+1 Die's methods (getValue, roll, and toString)
++1 Die's methods (**getValue**, **roll**, and **toString**)
 
 +2 DieDriver's implementation
 
