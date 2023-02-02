@@ -4,11 +4,11 @@ Consider the abstract class **Progression** that sets an initial value and defin
 
 # Arithmetic Progression
 
-An arithmetic progression computes the next value by adding **difference** to the current value. For example, to create the arithmetic progression 0, 2, 4, 6, ... the initial value is 0 and the difference is 2. **ArithmeticProgression** defines 2 constructors: one that takes both the initial value and the difference, and another one that only takes the difference (in that case, the initial value should be automatically set to 0). 
+An arithmetic progression computes the next value by adding **difference** to the current value. For example, to create the arithmetic progression 0, 2, 4, 6, ... the initial value is 0 and the difference is 2. **ArithmeticProgression** defines 2 constructors: one that takes both the initial value and the difference, and another one that takes no value at all, setting the initial value to 0 and the difference to 1. 
 
 # Geometric Progression
 
-A geometric progression computes the next value by multiplying **ratio** to the current value. For example, to create the geometric progression 1, 2, 4, 8, ... the initial value is 1 and the ratio is 2. **GeometricProgression** defines 2 constructors: one that takes both the initial value and the ratio, and another one that only takes the ratio (in that case, the initial value should be automatically set to 1). 
+A geometric progression computes the next value by multiplying **ratio** to the current value. For example, to create the geometric progression 1, 2, 4, 8, ... the initial value is 1 and the ratio is 2. **GeometricProgression** defines 2 constructors: one that takes both the initial value and the ratio, and another that takes no value at all, setting the initial value to 1 and the ration to 2. 
 
 # Fibonacci Progression
 
