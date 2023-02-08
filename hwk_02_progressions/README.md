@@ -12,7 +12,7 @@ A geometric progression computes the next value by multiplying **ratio** to the 
 
 # Fibonacci Progression
 
-A fibonacci progression computes the next value by adding both previous numbers. For example, to create the fibonacci progression 1, 2, 4, 8, ... the previous value is initially set to 0 and the value to 1. This should be done automatically by the fibonacci's default constructor (parameterless constructor). 
+A fibonacci progression computes the next value by adding both previous numbers. For example, to create the fibonacci progression 1, 1, 2, 3, 5, 8, 13, ... the previous value is initially set to 0 and the value to 1. This should be done automatically by the fibonacci's default constructor (parameterless constructor). 
 
 # Submission
 
