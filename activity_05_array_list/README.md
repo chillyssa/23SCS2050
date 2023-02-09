@@ -1,0 +1,1 @@
+This activity contains the code templates for an implementation of an array list. 
