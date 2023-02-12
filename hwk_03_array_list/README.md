@@ -22,4 +22,4 @@ There is no need to submit **ArrayListTest.java**.
 
 # Rubric 
 
-Pass all the tests and you are guarantee a 5 on this assignment. Each test that you fail you loose 1 point.
+Pass all the tests and you are guarantee a 5 on this assignment. Each test that you fail you lose 1 point.
