@@ -4,7 +4,9 @@
  * Description: Activity 06 - LinkedList
  */
 
-public class LinkedList<E> {
+import java.util.*;
+
+public class LinkedList<E> implements Iterable<E> {
 
     private Node<E> head;
 
@@ -57,23 +59,90 @@ public class LinkedList<E> {
     }
 
     public E get(int index) {
-        return null;
+        if (index < 0 || isEmpty())
+            throw new ArrayIndexOutOfBoundsException();
+        Node<E> current = head;
+        for (int i = 0; i < index && current != null; i++)
+            current = current.getNext();
+        if (current == null)
+            throw new ArrayIndexOutOfBoundsException();
+        return current.getValue();
     }
 
     // TODO: set value to location at index
     public void set(int index, E value) {
-
+        if (index < 0 || isEmpty())
+            throw new ArrayIndexOutOfBoundsException();
+        Node<E> current = head;
+        for (int i = 0; i < index && current != null; i++)
+            current = current.getNext();
+        if (current == null)
+            throw new ArrayIndexOutOfBoundsException();
+        current.setValue(value);
     }
 
     // TODO: insert value at the given index location
     // throw an exception if index is invalid
     public void insert(int index, E value) {
-
+        if (index < 0 || isEmpty())
+            throw new ArrayIndexOutOfBoundsException();
+        // special case (index = 0)
+        if (index == 0)
+            add(value);
+        else {
+            Node<E> current = head;
+            for (int i = 0; i < index - 1 && current.getNext() != null; i++)
+                current = current.getNext();
+            if (current.getNext() == null)
+                throw new ArrayIndexOutOfBoundsException();
+            Node<E> newNode = new Node(value);
+            newNode.setNext(current.getNext());
+            current.setNext(newNode);
+        }
     }
 
     // TODO: removes the element at the given index location
     // throw an exception if index is invalid
     public void remove(int index) {
+        if (index < 0 || isEmpty())
+            throw new ArrayIndexOutOfBoundsException();
+        // special case (index = 0)
+        if (index == 0) {
+            Node<E> toBeRemoved = head;
+            head = head.getNext();
+            toBeRemoved.setNext(null);
+        }
+        else {
+            Node<E> current = head;
+            for (int i = 0; i < index - 1 && current.getNext() != null; i++)
+                current = current.getNext();
+            if (current.getNext() == null)
+                throw new ArrayIndexOutOfBoundsException();
+            Node<E> toBeRemoved = current.getNext();
+            current.setNext(toBeRemoved.getNext());
+            toBeRemoved.setNext(null);
+        }
+    }
 
+    public Iterator<E> iterator() {
+        return new Iterator<E>() {
+
+            private Node<E> current = head;
+
+            @Override
+            public boolean hasNext() {
+                return current != null;
+            }
+
+            @Override
+            public E next() {
+                if (current != null) {
+                    E value = current.getValue();
+                    current = current.getNext();
+                    return value;
+                }
+                return null;
+            }
+        };
     }
 }
