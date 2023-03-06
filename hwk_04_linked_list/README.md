@@ -54,6 +54,10 @@ After your loop is done, you still need to update the **head** node using **prev
 
 Removing that reference is left for you to figure out. 
 
+## Improving the Solution
+
+Now that you have one solution that works, try to improve it by initializing **previous** to null and **current** to head. See if you can write the loop that changes the references in a way that works for all cases and that also updates head as the reverse list is built. 
+
 # Submission
 
 Zip **LinkedList.java** and **LinkedListDriver.java** into **hwk_04.zip** and upload the file to Canvas. 
