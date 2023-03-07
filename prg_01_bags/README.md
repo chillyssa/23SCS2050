@@ -1,6 +1,6 @@
 # Instructions 
 
-In this project your will implement a data structure that models a bag with items. Each item has a short description, a weight (in pounds), and a price (in US$). A bag weights the total weight of the items it carries. A bag also has a weight limit. Therefore, it does not allow items to be added if the weight limit cannot be preserved. As your will see, our implementation of a bag is going to be very similar to the linked list data structure discussed in class. 
+In this project your will implement a data structure that models a bag with items. Each item has a short description, a weight (in pounds), and a price (in US$). A bag weighs the total weight of the items it carries. A bag also has a weight limit. Therefore, it does not allow items to be added if the weight limit cannot be preserved. As you will see, our implementation of a bag is going to be very similar to the linked list data structure discussed in class. 
 
 # The Item Class 
 
@@ -17,7 +17,7 @@ if (a.compareTo(b) < 0)
 
 # The Bag Class 
 
-A bag can be created by setting its weight limit.  If the weight limit is not informed, it is assumed to be 50 lps (value defined by the **DEFAULT_WEIGHT_LIMIT** class variable). As said in the introduction section, a bag is modeled as a linked list. Because you can only add **Item** objects to the bag, the **head** of this specialized linked list is a reference to a **Node<Item>**. To avoid the cost of having to traverse the whole list to compute the bag's weight, a variable with the same name is maintained, and it should always reflect on the bag's current weight. Therefore, whenever a new item is added to the bag, the new item's weight must be added to the bag's weight variable; also, whenever an item is removed from the bag, the removed item's weight must be subtracted to the bag's weight variable. Other than the constructors, you are expected to implement the following methods in the **Bag** class: 
+A bag can be created by setting its weight limit.  If the weight limit is not informed, it is assumed to be 50 lbs (value defined by the **DEFAULT_WEIGHT_LIMIT** class variable). As said in the introduction section, a bag is modeled as a linked list. Because you can only add **Item** objects to the bag, the **head** of this specialized linked list is a reference to a **Node<Item>**. To avoid the cost of having to traverse the whole list to compute the bag's weight, a variable with the same name is maintained, and it should always reflect on the bag's current weight. Therefore, whenever a new item is added to the bag, the new item's weight must be added to the bag's weight variable; also, whenever an item is removed from the bag, the removed item's weight must be subtracted to the bag's weight variable. Other than the constructors, you are expected to implement the following methods in the **Bag** class: 
 
 * boolean isTrue()
 * double weight()
