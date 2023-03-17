@@ -48,14 +48,18 @@ When the stack becomes empty it means that all solutions were found. Return the 
 
 To **avoid** having points deducted, you MUST submit your project using the right format, which is: a zip file named "prg_02.zip" with the following files ONLY:
 
+```
 ChessBoard.java
 NQueens.java
+```
 
 Those files should NOT be in a subfolder. This is the structure that I am expecting:
 
+```
 prg_02.zip
 |___ChessBoard.java
 |___NQueens.java
+```
 
 Make sure to write your name in all source files submitted. Use the provided comment sections.
 
