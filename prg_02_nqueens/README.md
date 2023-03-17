@@ -34,13 +34,13 @@ This class implements the GUI for the board. The code is given to you. The only 
 
 # The NQueens Class 
 
-The NQueens class is the application that solves the N-Queens problem. It starts by asking the user for the parameter **N**.  Then it instantiates a **NQueens** object with the given **size** and calls its **run** method, which implements the **exhaustive search** algorithm to solve the N-Queens problem, showing each chess board configuration on the GUI, pausing **SLEEP_TIME**ms between configurations and returning the total number of chess board configurations found. 
+The NQueens class is the application that solves the N-Queens problem. It starts by asking the user for the parameter **N**.  Then it instantiates a **NQueens** object with the given **size** and calls its **run** method, which implements the **exhaustive search** algorithm to solve the problem, showing each chess board configuration on the GUI, pausing **SLEEP_TIME**ms between configurations and returning the total number of chess board configurations found. 
 
 The **exhaustive search** algorithm was explained in class. But basically you need to create a stack of **ChessBoard** objects and then push **size** **ChessBoard** objects, each of then placing a queen at a different column (or row, depending on your approach). At each iteration of the **exhaustive search** main loop, pop one **ChessBoard** object from the stack and check if it's solved.  If that is the case, update the **ChessPanel** using **updateChessBoard** and then call **repaint**. Give a **SLEEP_TIME**ms pause for the user to be able to see the (new) configuration. Remember to count this new solution. 
 
-If the **ChessBoard** object popped out from the stack is NOT solved, check if it's valid. Because if the board is already invalid, there is NO point in continuing this path. This is the **pruning** part of the algorithm. 
+If the **ChessBoard** object popped out from the stack is NOT solved, then try to place a new queen on different columns on the next row (or different rows on the next column, depending on your approach). Before pushing each new configuration onto the stack, make sure that this new configuration is still valid. Because if the board is already invalid, there is NO point in continuing this path. This is the **pruning** part of the algorithm. 
 
-If the board is valid, then try to place a new queen on different columns on the next row (or different rows on the next column, depending on your approach). Push each new configuration onto the stack. **CAREFUL HERE**: do not change and use the current configuration object. Instead, CLONE it first and then make changes on the cloned object. Otherwise, you will be making changes on the same configuration and pushing the same object onto the stack.  
+**CAREFUL HERE**: while creating new configurations, do not change and use the current configuration object. Instead, CLONE it first and then make changes on the cloned object. Otherwise, you will be making changes on the same configuration and pushing the same object onto the stack.  
 
 When the stack becomes empty it means that all solutions were found. Return the number of solutions found. 
 
