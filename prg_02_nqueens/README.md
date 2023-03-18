@@ -19,8 +19,8 @@ The ChessBoard class models a chess board with a given size (parameter N of the 
 
 You are NOT allowed to change any of the ChessBoard's interface (methods above). Your solution must use all methods above. However, you are free to add your own (private) methods as you find them useful. Two helper methods are suggested: 
 
-* checkDiagonals(): checks if the current configuration passes the diagonals test (no queens attaching on diagonals); 
-* checkRowsColumns(): checks if the current configuration passes the row/column test (no queens attaching on rows/columns).
+* checkDiagonals(): checks if the current configuration passes the diagonals test (no queens attacking on diagonals); 
+* checkRowsColumns(): checks if the current configuration passes the row/column test (no queens attacking on rows/columns).
 
 # The ChessBoardTest Class
 
