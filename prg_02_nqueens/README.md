@@ -28,7 +28,7 @@ SOME unit tests were provided. However, those tests are far from being comprehen
 
 # The ChessPanel Class 
 
-This class implements the GUI for the board. The code is given to you. The only method that you should understand is the following: 
+This class implements the GUI for the board. The code is given to you. The only method that you will be using from this class is the following: 
 
 * updateChessBoard(ChessBoard chessBoard): updates the chess board as seen by the GUI.
 
