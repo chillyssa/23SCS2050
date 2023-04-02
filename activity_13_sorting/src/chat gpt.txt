@@ -1,0 +1,8 @@
+There is a lot of discussion going on right now about AI generated code. The models are becoming more sofisticated taking advantage of 
+the large availability of public code to train them. Tools like chat gpt and github copilot are now available to the general public and are 
+easily integrated in popular development tools like intellij, pycharm, and vs code. So my first question to the group is how is industry currently leveraging AI to supplement the generation of program code, if at all? 
+
+The immediate consequence of using these tools is the possibility of plaigirism, which is obviously a concern for educators because it makes assessing learning more difficult, beyond the ethical-related issues. IMO there is no point in just banning those tools simply because it is not going to work. We should treat AI code generator tools the way math uses calculators, allowing them for some assignments but not others. Perhaps we will have to change our assessment to include more in-class tests on paper, for example. For take-home assignments, including larger projects, we should expect that students will use some AI assistance. How much of assistance they will use is still unknown at this point. 
+
+They’ll need to know how to use these tools while still in school, their strengths and weaknesses, in order to work alongside them when they graduate. 
+
