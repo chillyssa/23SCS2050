@@ -184,14 +184,14 @@ Now that we explained how counting sort works, it is your turn to implement the 
 
 As described above, you can run counting sort on each of the index positions from the least to most significant digits to sort an entire array.  Finish the implementation and make sure all tests are cleared. 
 
+In TO-DO 2a, to get the number of digits of a number you can try rounding up the logarithm (base 10) of the number.  Note that it doesn't work for 0 and 1. 
+
 # Submission
 
 Upload **RadixSort.java** on Canvas. 
 
 # Rubric
 
-+2 Task class
-
-+2 CircularLinkedList class
-
-+1 TaskScheduler class
+```
++.5 for each test passed rounded up to 5
+```
