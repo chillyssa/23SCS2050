@@ -20,6 +20,12 @@ public class BSTDriver {
         bst.add(55);
         bst.add(9);
         System.out.println(bst);
+        bst.remove(20);
+        System.out.println(bst);
+        bst.remove(5);
+        System.out.println(bst);
+//        bst.remove(9);
+//        System.out.println(bst);
 //        System.out.println(bst.search(3));
 //        System.out.println(bst.search(30));
 //        System.out.println(bst.search(75));

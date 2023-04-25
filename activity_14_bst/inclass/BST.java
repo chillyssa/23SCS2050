@@ -105,23 +105,86 @@ public class BST<E extends Comparable<E>> {
     public boolean search(final E value) {
         return searchRecursively(root, value);    }
 
-    // TODO: implement numberChildren
+    // TODOd: implement numberChildren
     private int numberChildren(final BSTNode<E> current) {
-        return 0;
+        if (current == null || (current.getLeft() == null && current.getRight() == null))
+            return 0;
+        if (current.getLeft() != null && current.getRight() != null)
+            return 2;
+        return 1;
     }
 
     // TODO: implement getLeftMost
     private BSTNode<E> getLeftMost(final BSTNode<E> current) {
-        return null;
+        if (current == null)
+            return null;
+        if (current.getLeft() == null)
+            return current;
+        return getLeftMost(current.getLeft());
     }
 
     // TODO: implement removeRecursively
     private BSTNode<E> removeRecursively(final BSTNode<E> current, final E value) {
-        return null;
+        if (current == null)
+            return null;
+        // we found the element to be removed!
+        if (value.compareTo(current.getValue()) == 0) {
+            int numberChildren = numberChildren(current);
+            // #children == 0
+            if (numberChildren == 0)
+                return null;
+            // #children == 1
+            else if (numberChildren == 1) {
+                // the child is on the left!
+                if (current.getLeft() != null) {
+                    BSTNode<E> temp = current.getLeft();
+                    current.setLeft(null);
+                    return temp;
+                }
+                // the child is on the right!
+                else {
+                    BSTNode<E> temp = current.getRight();
+                    current.setRight(null);
+                    return temp;
+                }
+            }
+            // #children = 2
+            else {
+                BSTNode<E> toBeReturned = current.getRight();
+                BSTNode<E> leftMost = getLeftMost(toBeReturned);
+                leftMost.setLeft(current.getLeft());
+                current.setLeft(null);
+                current.setRight(null);
+                return toBeReturned;
+            }
+        }
+        // deciding going left
+        if (value.compareTo(current.getValue()) < 0) {
+            current.setLeft(removeRecursively(current.getLeft(), value));
+            return current;
+        }
+        // deciding going right
+        else {
+            current.setRight(removeRecursively(current.getRight(), value));
+            return current;
+        }
     }
+
+//    private void removeRecursively(final BSTNode<E> current, final E value) {
+//        if (value.compareTo(current.getValue()) < 0) {
+//            BSTNode<E> leftChild = current.getLeft();
+//            if (value.compareTo(leftChild.getValue()) == 0) {
+//                int numberChildren = numberChildren(leftChild);
+//                if (numberChildren == 0) {
+//                    current.setLeft(null);
+//                }
+//            }
+//
+//        }
+//    }
 
     // TODO: implement remove
     public void remove(final E value) {
-
+        root = removeRecursively(root, value);
     }
 }
