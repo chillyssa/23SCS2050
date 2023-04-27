@@ -42,7 +42,14 @@
  
      // TO DO: implement method below
      public V get(K key) {
-         return null;
+        int index = hash(key);
+        HashNode<K, V> current = table[index];
+        while (current != null) {
+            if (current.getKey().equals(key)) 
+                return current.getValue();  
+            current = current.getNext();
+        }
+        return null;
      }
  
      private String linkedListToString(HashNode<K,V> head) {
