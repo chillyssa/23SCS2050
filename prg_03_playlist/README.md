@@ -43,34 +43,34 @@ Welcome to my playlist!
 Options: 1:print 2:add 3:search 4:remove 5:clear 6:quit
 ? 1
 ['Take On Me','A-ha', rank=4]
-	['Billie Jean','Michael Jackson', rank=3]
-		['Another One Bites the Dust','Queen', rank=5]
-			['Africa','Toto', rank=4]
-		['Like a Prayer','Madonna', rank=4]
-			['Every Breath You Take','The Police', rank=4]
-				['Don't You Want Me','The Human League', rank=4]
-				['Jump','Van Halen', rank=3]
-					['Just Like Heaven','The Cure', rank=5]
-			['Need You Tonight','INX', rank=2]
+        ['Billie Jean','Michael Jackson', rank=3]
+                ['Another One Bites the Dust','Queen', rank=5]
+                        ['Africa','Toto', rank=4]
+                ['Like a Prayer','Madonna', rank=4]
+                        ['Every Breath You Take','The Police', rank=4]
+                                ['Don't You Want Me','The Human League', rank=4]
+                                ['Jump','Van Halen', rank=3]
+                                        ['Just Like Heaven','The Cure', rank=5]
+        ['Total Eclipse of the Heart','Bonnie Tyler', rank=2]
 
 Options: 1:print 2:add 3:search 4:remove 5:clear 6:quit
 ? 2
-Title? Total Eclipse of the Heart
-Artist? Bonnie Tyler
+Title? Need You Tonight
+Artist? INX
 Rank [1-5]? 2
 Options: 1:print 2:add 3:search 4:remove 5:clear 6:quit
 ? 1
 ['Take On Me','A-ha', rank=4]
-	['Billie Jean','Michael Jackson', rank=3]
-		['Another One Bites the Dust','Queen', rank=5]
-			['Africa','Toto', rank=4]
-		['Like a Prayer','Madonna', rank=4]
-			['Every Breath You Take','The Police', rank=4]
-				['Don't You Want Me','The Human League', rank=4]
-				['Jump','Van Halen', rank=3]
-					['Just Like Heaven','The Cure', rank=5]
-			['Need You Tonight','INX', rank=2]
-	['Total Eclipse of the Heart','Bonnie Tyler', rank=2]
+        ['Billie Jean','Michael Jackson', rank=3]
+                ['Another One Bites the Dust','Queen', rank=5]
+                        ['Africa','Toto', rank=4]
+                ['Like a Prayer','Madonna', rank=4]
+                        ['Every Breath You Take','The Police', rank=4]
+                                ['Don't You Want Me','The Human League', rank=4]
+                                ['Jump','Van Halen', rank=3]
+                                        ['Just Like Heaven','The Cure', rank=5]
+                        ['Need You Tonight','INX', rank=2]
+        ['Total Eclipse of the Heart','Bonnie Tyler', rank=2]
 
 Options: 1:print 2:add 3:search 4:remove 5:clear 6:quit
 ? 3
@@ -86,15 +86,15 @@ Title? Need You Tonight
 Options: 1:print 2:add 3:search 4:remove 5:clear 6:quit
 ? 1
 ['Take On Me','A-ha', rank=4]
-	['Billie Jean','Michael Jackson', rank=3]
-		['Another One Bites the Dust','Queen', rank=5]
-			['Africa','Toto', rank=4]
-		['Like a Prayer','Madonna', rank=4]
-			['Every Breath You Take','The Police', rank=4]
-				['Don't You Want Me','The Human League', rank=4]
-				['Jump','Van Halen', rank=3]
-					['Just Like Heaven','The Cure', rank=5]
-	['Total Eclipse of the Heart','Bonnie Tyler', rank=2]
+        ['Billie Jean','Michael Jackson', rank=3]
+                ['Another One Bites the Dust','Queen', rank=5]
+                        ['Africa','Toto', rank=4]
+                ['Like a Prayer','Madonna', rank=4]
+                        ['Every Breath You Take','The Police', rank=4]
+                                ['Don't You Want Me','The Human League', rank=4]
+                                ['Jump','Van Halen', rank=3]
+                                        ['Just Like Heaven','The Cure', rank=5]
+        ['Total Eclipse of the Heart','Bonnie Tyler', rank=2]
 
 Options: 1:print 2:add 3:search 4:remove 5:clear 6:quit
 ? 6
